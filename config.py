@@ -68,6 +68,7 @@ FRAME_MAX_WIDTH = int(os.environ.get("FRAME_MAX_WIDTH", "256"))
 LOCAL_VISION_TIMEOUT_SECONDS = int(os.environ.get("LOCAL_VISION_TIMEOUT_SECONDS", "150"))  # encoder pass + gen on CPU; headroom for a 10-frame video
 
 OPENROUTER_API_KEY = os.environ["OPENROUTER_API_KEY"]
+OPENROUTER_API_URL = os.environ["OPENROUTER_API_URL"]
 OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "poolside/laguna-xs-2.1:free")
 # Used if the primary model gets rate-limited (429) upstream — free models are prone to this. Empty = no fallback.
 OPENROUTER_FALLBACK_MODEL = os.environ.get("OPENROUTER_FALLBACK_MODEL", "nvidia/nemotron-3-super-120b-a12b:free")
