@@ -7,7 +7,7 @@ import config
 
 log = logging.getLogger("t800")
 
-API_URL = "https://openrouter.ai/api/v1/chat/completions"
+API_URL = config.OPENROUTER_API_URL
 RETRYABLE_STATUS_CODES = {500, 502, 503, 504}
 
 
